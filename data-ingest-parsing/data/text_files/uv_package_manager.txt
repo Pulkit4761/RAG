@@ -1,0 +1,22 @@
+uv package manager
+
+uv init -> Initialize a Python project
+
+run add "libraries" -> adds libraries to dependencies
+
+uv run python main.py -> Runs the file
+
+uv venv -> Create a virtual environment
+
+source .venv/bin/activate -> activate virtual env
+
+uv sync -> sync env
+
+uv list -> list installed dependencies
+
+uv info -> show project info
+
+uv python install 3.11  -> use specific python version
+uv venv --python 3.11
+
+uv cache clean -> clear uv cache
