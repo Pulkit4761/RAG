@@ -1,0 +1,49 @@
+Git Cheatsheet
+
+git init                    # initialize new repo
+git clone URL               # clone remote repo
+
+Check Status & History-
+git status                  # current state
+git log                     # commit history
+git log --oneline           # compact history
+git diff                    # unstaged changes
+git diff --staged           # staged changes
+
+Stage & Commit-
+git add <file.txt>           # stage/track file
+git add .                    # stage everything
+git commit -m "message"      # commit staged files
+git commit --amend	     # Amend last commit
+
+Branching-
+git branch                   # list branches
+git branch new-branch        # create branch
+git checkout branch-name     # switch branch
+git checkout -b new-branch   # create + switch
+git merge branch-name	     # Merge branch
+
+Fetch vs Pull-
+git fetch        # download changes (no merge)
+git pull         # fetch + merge
+
+Unstage a file-
+git restore --staged file.txt
+
+Discard local changes-
+git restore file.txt
+
+Undo last commit (keep changes)-
+git reset --soft HEAD~1
+
+Undo last commit (delete changes ⚠)-
+git reset --hard HEAD~1
+
+git revert HEAD~1
+
+GitHub
+git remote -v      		# check remote origin URL of git repo
+git remote remove origin	# remove remote origin URL of git repo
+git remote add origin URL
+git branch -M main
+git push -u origin main
