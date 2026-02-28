@@ -13,6 +13,7 @@ unstructured
 pdfminer
 python-docx
 docx2txt
+jq
 matplotlib 
 pandas
 langchain-huggingface
